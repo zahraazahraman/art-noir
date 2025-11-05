@@ -1,0 +1,56 @@
+name: CI - PHP checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  php-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['8.0'] # change/add versions if needed
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP ${{ matrix.php }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, intl
+          coverage: none
+
+      - name: Show PHP version
+        run: php -v
+
+      - name: Validate PHP syntax (quick)
+        run: |
+          echo "Running php -l on all PHP files..."
+          find . -type f -name "*.php" -not -path "./vendor/*" -print0 | xargs -0 -n1 php -l
+
+      # Optional: run composer if you have composer.json
+      - name: Install dependencies (composer)
+        if: fileExists('composer.json')
+        run: |
+          php -v
+          curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+          composer install --no-interaction --no-progress
+
+      # Optional: run PHP CodeSniffer if installed via composer
+      - name: Run PHP CodeSniffer (if available)
+        if: ${{ always() && (hashFiles('**/composer.lock') || false) }}
+        run: |
+          if [ -f vendor/bin/phpcs ]; then
+            vendor/bin/phpcs --standard=PSR12 --extensions=php -n .
+          else
+            echo "phpcs not installed (skip). Add phpcs in composer require --dev to enable."
+          fi
+
+      # Optional: Run ESLint (if you choose to add it and package.json)
+      - name: Lint JavaScript (optional)
+        if: fileExists('package.json')
+        run: |
+          npm ci
+          npx eslint src/js || true
