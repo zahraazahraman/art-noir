@@ -1,0 +1,15 @@
+# Hide local config and credentials
+.env
+config.php
+
+# Hide system files
+.DS_Store
+Thumbs.db
+
+# Hide logs and temporary files
+*.log
+*.tmp
+
+# Hide IDE settings (VSCode, PhpStorm, etc.)
+.vscode/
+.idea/
