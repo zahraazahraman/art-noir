@@ -13,8 +13,8 @@ Each major item is broken into **epics → user stories → tasks**.
 - [x] **Task 0.1.3:** `CHANGELOG.md`
 
 ### Story 0.2: Repository & CI
-- [ ] **Task 0.2.1:** Initialize git repo, `.gitignore`
-- [ ] **Task 0.2.2:** Setup basic CI (linting, PHP checks)
+- [x] **Task 0.2.1:** Initialize git repo, `.gitignore`
+- [x] **Task 0.2.2:** Setup basic CI (linting, PHP checks)
 
 ---
 
