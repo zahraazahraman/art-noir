@@ -14,7 +14,6 @@ A comprehensive art gallery management system that enables artists to showcase t
 - [Database Schema](#database-schema)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Future Enhancements](#future-enhancements)
 - [Author](#author)
 
@@ -275,17 +274,6 @@ ArtNoir/
 - Role-based authorization
 - Automatic session validation
 - Timeout handling
-
-## 📸 Screenshots
-
-> Add screenshots of: ![Uploading Screen Shot 2026-02-06 at 8.36.11 AM.png…]()
-
-> 
-> - Homepage/Gallery
-> - Admin Dashboard
-> - Artwork Management
-> - Analytics Charts
-> - User Profile
 
 ## 🔮 Future Enhancements
 
