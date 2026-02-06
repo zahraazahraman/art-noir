@@ -1,0 +1,186 @@
+# Art Noir - Git Ignore File
+
+# ============================================
+
+# Database Configuration & Sensitive Files
+
+# ============================================
+
+includes/config.php
+.env
+*.env
+
+# ============================================
+
+# Uploaded Files (User Generated Content)
+
+# ============================================
+
+# Note: You may want to track sample images but ignore user uploads
+
+assets/images/artworks/*
+assets/images/profiles/*
+assets/images/artists/*
+
+# Keep the directories but ignore contents
+
+!assets/images/artworks/.gitkeep
+!assets/images/profiles/.gitkeep
+!assets/images/artists/.gitkeep
+
+# ============================================
+
+# IDE & Editor Files
+
+# ============================================
+
+# Visual Studio Code
+
+.vscode/
+*.code-workspace
+
+# PhpStorm / IntelliJ IDEA
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+
+nbproject/
+nbbuild/
+dist/
+nbdist/
+
+# Eclipse
+
+.buildpath
+.project
+.settings/
+
+# ============================================
+
+# Operating System Files
+
+# ============================================
+
+# macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+
+*~
+.directory
+.Trash-*
+
+# ============================================
+
+# PHP & Composer
+
+# ============================================
+
+vendor/
+composer.lock
+composer.phar
+
+# ============================================
+
+# Node.js (if you add npm later)
+
+# ============================================
+
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# ============================================
+
+# Logs & Temporary Files
+
+# ============================================
+
+*.log
+*.sql
+*.sqlite
+*.tmp
+temp/
+tmp/
+cache/
+logs/
+
+# Exception: Keep the database schema
+
+!database/artnoir.sql
+!database/ArtNoir.sql
+
+# ============================================
+
+# Backup Files
+
+# ============================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ============================================
+
+# Session Files
+
+# ============================================
+
+sessions/
+*.sess
+
+# ============================================
+
+# Testing & Development
+
+# ============================================
+
+test/
+tests/
+.phpunit.result.cache
+phpunit.xml
+
+# ============================================
+
+# Build & Deployment
+
+# ============================================
+
+build/
+dist/
+.htaccess.backup
+
+# ============================================
+
+# Credentials & Keys
+
+# ============================================
+
+*.key
+*.pem
+*.cert
+credentials/
+secrets/
