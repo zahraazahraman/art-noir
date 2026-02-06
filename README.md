@@ -278,7 +278,8 @@ ArtNoir/
 
 ## 📸 Screenshots
 
-> Add screenshots of:
+> Add screenshots of: ![Uploading Screen Shot 2026-02-06 at 8.36.11 AM.png…]()
+
 > 
 > - Homepage/Gallery
 > - Admin Dashboard
