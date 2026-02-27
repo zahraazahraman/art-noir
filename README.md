@@ -292,8 +292,6 @@ ArtNoir/
 Computer Science Student - American University of Technology (AUT)
 
 - 📧 Email: zahraazahraman@gmail.com
-- 💼 LinkedIn: [Your LinkedIn Profile]
-- 🌐 Portfolio: [Your Portfolio URL]
 
 **Project Information:**
 
