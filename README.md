@@ -296,7 +296,7 @@ Computer Science Student - American University of Technology (AUT)
 **Project Information:**
 
 - Course: CSC 440 - Web Development
-- Instructor: Dr. Georges Abboudeh
+- Instructor: Mr. Georges Abboudeh
 - Student ID: 202300306
 - Completion Date: December 2025
 
@@ -310,7 +310,6 @@ This project was developed as an academic assignment for educational purposes.
 
 ## 🙏 Acknowledgments
 
-- Dr. Georges Abboudeh for guidance and instruction
 - American University of Technology (AUT)
 - Chart.js for data visualization library
 - Bootstrap for responsive framework
